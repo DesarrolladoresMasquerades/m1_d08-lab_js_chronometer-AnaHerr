@@ -40,8 +40,15 @@ function printMilliseconds() {
   // ... your code goes here
 }
 
+
 function printSplit() {
-  // ... your code goes here
+  
+  const splitString = chronometer.split();
+
+  const newSplit = document.createElement("li");
+  newSplit.innerText = splitString;
+
+  splitsElement.appendChild(newSplit);
 }
 
 function clearSplits() {
